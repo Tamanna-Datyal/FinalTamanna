@@ -1,0 +1,33 @@
+2022-01-18 13:34:23,183 - TestCases.SiginHomepage -INFO - click for sigin
+2022-01-18 13:34:23,347 - TestCases.SiginHomepage -INFO - click for email
+2022-01-18 14:24:51,061 - TestCases.SiginHomepage -INFO - click on next page
+2022-01-18 14:26:14,669 - TestCases.SiginHomepage -INFO - click on next page
+2022-01-18 14:26:17,549 - TestCases.SiginHomepage -INFO - click on login
+2022-01-18 14:26:17,675 - TestCases.SiginHomepage -INFO - enter email
+2022-01-18 14:26:17,774 - TestCases.SiginHomepage -INFO - enter password
+2022-01-18 14:26:17,847 - TestCases.SiginHomepage -INFO - click
+2022-01-18 14:26:33,423 - TestCases.SiginHomepage -INFO - click on login
+2022-01-18 14:26:33,553 - TestCases.SiginHomepage -INFO - enter email
+2022-01-18 14:26:33,644 - TestCases.SiginHomepage -INFO - enter password
+2022-01-18 14:26:33,712 - TestCases.SiginHomepage -INFO - click
+2022-01-18 15:35:29,769 - TestCases.CabBookingHomePage -INFO - click on booking
+2022-01-18 15:35:54,882 - TestCases.DownloadAppHomePage -INFO - click on download app
+2022-01-18 15:35:58,162 - TestCases.DownloadAppHomePage -INFO - display text
+2022-01-18 15:36:13,052 - TestCases.LocalTabHomePage -INFO - click on LocalTab
+2022-01-18 15:36:13,336 - TestCases.LocalTabHomePage -INFO - enter city
+2022-01-18 15:36:16,440 - TestCases.LocalTabHomePage -INFO - select time
+2022-01-18 15:36:17,101 - TestCases.LocalTabHomePage -INFO - select car
+2022-01-18 15:36:18,211 - TestCases.LocalTabHomePage -INFO - print car name
+2022-01-18 15:36:27,057 - TestCases.FeaturedHomePage -INFO - click on Indian Express
+2022-01-18 15:36:27,210 - TestCases.FeaturedHomePage -INFO - print headline
+2022-01-18 15:36:58,692 - TestCases.OutStationHomePage -INFO - click on round trip
+2022-01-18 15:36:58,835 - TestCases.OutStationHomePage -INFO - enter city
+2022-01-18 15:37:01,103 - TestCases.OutStationHomePage -INFO - enter tocity
+2022-01-18 15:37:03,594 - TestCases.OutStationHomePage -INFO - car selected
+2022-01-18 15:37:27,741 - TestCases.AirportTabHomePage -INFO - click on link
+2022-01-18 15:37:27,927 - TestCases.AirportTabHomePage -INFO - enter city
+2022-01-18 15:37:30,241 - Resources.Base -INFO - enter trip
+2022-01-18 15:37:32,447 - TestCases.AirportTabHomePage -INFO - add address
+2022-01-18 15:37:34,790 - TestCases.AirportTabHomePage -INFO - click on calendar
+2022-01-18 15:37:36,920 - TestCases.AirportTabHomePage -INFO - click on time
+2022-01-18 15:37:37,016 - TestCases.AirportTabHomePage -INFO - select car

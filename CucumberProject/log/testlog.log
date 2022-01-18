@@ -1,0 +1,29 @@
+2022-01-18 16:43:29,886 - stepDefinations.SignIn_Details -INFO - navigate to page
+2022-01-18 16:43:29,987 - stepDefinations.SignIn_Details -INFO - sigin clicked
+2022-01-18 16:43:30,173 - stepDefinations.SignIn_Details -INFO - entered email
+2022-01-18 16:43:30,291 - stepDefinations.SignIn_Details -INFO - entered password
+2022-01-18 16:43:30,810 - stepDefinations.SignIn_Details -INFO - text displayed
+2022-01-18 16:43:49,587 - stepDefinations.OutStaion_OneWayTrip -INFO - oneway clicked
+2022-01-18 16:43:54,153 - stepDefinations.OutStaion_OneWayTrip -INFO - city selected
+2022-01-18 16:43:56,302 - stepDefinations.OutStaion_OneWayTrip -INFO - time selected
+2022-01-18 16:43:56,569 - stepDefinations.OutStaion_OneWayTrip -INFO - selected car
+2022-01-18 16:43:56,577 - stepDefinations.OutStaion_OneWayTrip -INFO - title selected
+2022-01-18 16:44:03,390 - stepDefinations.Travel_Aggent -INFO - clicked on next page
+2022-01-18 16:44:06,555 - stepDefinations.Travel_Aggent -INFO - login clicked
+2022-01-18 16:44:06,689 - stepDefinations.Travel_Aggent -INFO - email entered
+2022-01-18 16:44:06,789 - stepDefinations.Travel_Aggent -INFO - password entered
+2022-01-18 16:44:07,169 - stepDefinations.Travel_Aggent -INFO - text displayed
+2022-01-18 16:44:21,008 - stepDefinations.Airport_Tab -INFO - click on airport
+2022-01-18 16:44:21,445 - stepDefinations.Airport_Tab -INFO - city selected
+2022-01-18 16:44:23,802 - stepDefinations.Airport_Tab -INFO - clicked on trip
+2022-01-18 16:44:26,190 - stepDefinations.Airport_Tab -INFO - entered address
+2022-01-18 16:44:28,443 - stepDefinations.Airport_Tab -INFO - date selcted
+2022-01-18 16:44:30,910 - stepDefinations.Airport_Tab -INFO - car selected
+2022-01-18 16:45:05,790 - stepDefinations.Local_Tab -INFO - localTab clicked
+2022-01-18 16:45:05,932 - stepDefinations.Local_Tab -INFO - city selected
+2022-01-18 16:45:09,126 - stepDefinations.Local_Tab -INFO - time selected
+2022-01-18 16:45:09,570 - stepDefinations.Local_Tab -INFO - car selected
+2022-01-18 16:45:10,629 - stepDefinations.Local_Tab -INFO - displayed carname
+2022-01-18 16:45:19,830 - stepDefinations.Download_App -INFO - clicked on download
+2022-01-18 16:45:25,895 - stepDefinations.Download_App -INFO - text displayed
+2022-01-18 16:45:40,393 - stepDefinations.Feature_Page -INFO - Indian express clicked

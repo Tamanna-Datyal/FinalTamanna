@@ -1,0 +1,33 @@
+2022-01-18 13:34:23,183 [main] INFO TestCases.SiginHomepage - click for sigin
+2022-01-18 13:34:23,347 [main] INFO TestCases.SiginHomepage - click for email
+2022-01-18 14:24:51,061 [main] INFO TestCases.SiginHomepage - click on next page
+2022-01-18 14:26:14,669 [main] INFO TestCases.SiginHomepage - click on next page
+2022-01-18 14:26:17,549 [main] INFO TestCases.SiginHomepage - click on login
+2022-01-18 14:26:17,675 [main] INFO TestCases.SiginHomepage - enter email
+2022-01-18 14:26:17,774 [main] INFO TestCases.SiginHomepage - enter password
+2022-01-18 14:26:17,847 [main] INFO TestCases.SiginHomepage - click
+2022-01-18 14:26:33,423 [main] INFO TestCases.SiginHomepage - click on login
+2022-01-18 14:26:33,553 [main] INFO TestCases.SiginHomepage - enter email
+2022-01-18 14:26:33,644 [main] INFO TestCases.SiginHomepage - enter password
+2022-01-18 14:26:33,712 [main] INFO TestCases.SiginHomepage - click
+2022-01-18 15:35:29,769 [main] INFO TestCases.CabBookingHomePage - click on booking
+2022-01-18 15:35:54,882 [main] INFO TestCases.DownloadAppHomePage - click on download app
+2022-01-18 15:35:58,162 [main] INFO TestCases.DownloadAppHomePage - display text
+2022-01-18 15:36:13,052 [main] INFO TestCases.LocalTabHomePage - click on LocalTab
+2022-01-18 15:36:13,336 [main] INFO TestCases.LocalTabHomePage - enter city
+2022-01-18 15:36:16,440 [main] INFO TestCases.LocalTabHomePage - select time
+2022-01-18 15:36:17,101 [main] INFO TestCases.LocalTabHomePage - select car
+2022-01-18 15:36:18,211 [main] INFO TestCases.LocalTabHomePage - print car name
+2022-01-18 15:36:27,057 [main] INFO TestCases.FeaturedHomePage - click on Indian Express
+2022-01-18 15:36:27,210 [main] INFO TestCases.FeaturedHomePage - print headline
+2022-01-18 15:36:58,692 [main] INFO TestCases.OutStationHomePage - click on round trip
+2022-01-18 15:36:58,835 [main] INFO TestCases.OutStationHomePage - enter city
+2022-01-18 15:37:01,103 [main] INFO TestCases.OutStationHomePage - enter tocity
+2022-01-18 15:37:03,594 [main] INFO TestCases.OutStationHomePage - car selected
+2022-01-18 15:37:27,741 [main] INFO TestCases.AirportTabHomePage - click on link
+2022-01-18 15:37:27,927 [main] INFO TestCases.AirportTabHomePage - enter city
+2022-01-18 15:37:30,241 [main] INFO Resources.Base - enter trip
+2022-01-18 15:37:32,447 [main] INFO TestCases.AirportTabHomePage - add address
+2022-01-18 15:37:34,790 [main] INFO TestCases.AirportTabHomePage - click on calendar
+2022-01-18 15:37:36,920 [main] INFO TestCases.AirportTabHomePage - click on time
+2022-01-18 15:37:37,016 [main] INFO TestCases.AirportTabHomePage - select car

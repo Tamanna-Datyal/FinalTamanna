@@ -1,0 +1,329 @@
+<html>
+<head>
+<title>TestNG:  Automate a Savaari Website</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Automate a Savaari Website</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>5/5/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jan 18 16:43:14 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>227 seconds (227686 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='cucumberOption.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: cucumberOption.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "OutStation car booking TestCase", "Optional[ALandingPage]"</td>
+<td><div><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //*[@id=\&quot;approot\&quot;]/mat-sidenav-container/mat-sidenav-content/app-home/div/app-home-container/div[1]/div[1]/div[2]/app-outstation/div/div[2]/label because of the following error:
+SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//*[@id=\&quot;approot\&quot;]/mat-sidenav-container/mat-sidenav-content/app-home/div/app-home-container/div[1]/div[1]/div[2]/app-outstation/div/div[2]/label&apos; is not a valid XPath expression.
+  (Session info: chrome=97.0.4692.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MT-91110305H&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\M1076468\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57254}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1ed00b6fe7266d90426b635202e2fd5f
+*** Element info: {Using=xpath, value=//*[@id=\&quot;approot\&quot;]/mat-sidenav-container/mat-sidenav-content/app-home/div/app-home-container/div[1]/div[1]/div[2]/app-outstation/div/div[2]/label}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at PageObjects.OutStationPage.roundtrip(OutStationPage.java:24)
+	at stepDefinations.OutStaion_RoundTRip.Navigate_to_Site(OutStaion_RoundTRip.java:38)
+	at ?.Select the Round Trip checkBox(file:///C:/Users/M1076468/eclipse-workspace/CucumberProject/src/test/java/Features/Loginn.feature:39)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1423507882", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1423507882'><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //*[@id=\&quot;approot\&quot;]/mat-sidenav-container/mat-sidenav-content/app-home/div/app-home-container/div[1]/div[1]/div[2]/app-outstation/div/div[2]/label because of the following error:
+SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//*[@id=\&quot;approot\&quot;]/mat-sidenav-container/mat-sidenav-content/app-home/div/app-home-container/div[1]/div[1]/div[2]/app-outstation/div/div[2]/label&apos; is not a valid XPath expression.
+  (Session info: chrome=97.0.4692.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MT-91110305H&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\M1076468\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57254}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1ed00b6fe7266d90426b635202e2fd5f
+*** Element info: {Using=xpath, value=//*[@id=\&quot;approot\&quot;]/mat-sidenav-container/mat-sidenav-content/app-home/div/app-home-container/div[1]/div[1]/div[2]/app-outstation/div/div[2]/label}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at PageObjects.OutStationPage.roundtrip(OutStationPage.java:24)
+	at stepDefinations.OutStaion_RoundTRip.Navigate_to_Site(OutStaion_RoundTRip.java:38)
+	at ?.Select the Round Trip checkBox(file:///C:/Users/M1076468/eclipse-workspace/CucumberProject/src/test/java/Features/Loginn.feature:39)
+</pre></div></td>
+<td>1</td>
+<td>cucumberOption.TestRunnerTestng@7c83dc97</td></tr>
+<tr>
+<td title='cucumberOption.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: cucumberOption.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on Airport", "Optional[ALandingPage]"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//*[@id=&quot;approot&quot;]/mat-sidenav-container/mat-sidenav-content/app-select-car/div[2]/div/div/div[1]/div/div[4]/div/button
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MT-91110305H&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at PageObjects.AirportTab.Carselect(AirportTab.java:67)
+	at stepDefinations.Airport_Tab.click_on_car_and_select_car(Airport_Tab.java:106)
+	at ?.user click on car and select car(file:///C:/Users/M1076468/eclipse-workspace/CucumberProject/src/test/java/Features/Loginn.feature:84)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1254907391", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1254907391'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//*[@id=&quot;approot&quot;]/mat-sidenav-container/mat-sidenav-content/app-select-car/div[2]/div/div/div[1]/div/div[4]/div/button
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MT-91110305H&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at PageObjects.AirportTab.Carselect(AirportTab.java:67)
+	at stepDefinations.Airport_Tab.click_on_car_and_select_car(Airport_Tab.java:106)
+	at ?.user click on car and select car(file:///C:/Users/M1076468/eclipse-workspace/CucumberProject/src/test/java/Features/Loginn.feature:84)
+</pre></div></td>
+<td>39</td>
+<td>cucumberOption.TestRunnerTestng@7c83dc97</td></tr>
+<tr>
+<td title='cucumberOption.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: cucumberOption.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Aboutus Page", "Optional[ALandingPage]"</td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=97.0.4692.71)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MT-91110305H&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\M1076468\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57403}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fcd4278e4ba7b61c9ca910c1dd3d254e
+*** Element info: {Using=xpath, value=//*[@id=&quot;approot&quot;]/mat-sidenav-container/mat-sidenav-content/app-home/div/app-home-container/div[2]/div[3]/p[5]/a[3]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at PageObjects.AboutUs.Aboutus(AboutUs.java:22)
+	at stepDefinations.About_us.click(About_us.java:43)
+	at ?.Click on Aboutus(file:///C:/Users/M1076468/eclipse-workspace/CucumberProject/src/test/java/Features/Loginn.feature:96)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace79121205", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace79121205'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=97.0.4692.71)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MT-91110305H&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\M1076468\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57403}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fcd4278e4ba7b61c9ca910c1dd3d254e
+*** Element info: {Using=xpath, value=//*[@id=&quot;approot&quot;]/mat-sidenav-container/mat-sidenav-content/app-home/div/app-home-container/div[2]/div[3]/p[5]/a[3]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at PageObjects.AboutUs.Aboutus(AboutUs.java:22)
+	at stepDefinations.About_us.click(About_us.java:43)
+	at ?.Click on Aboutus(file:///C:/Users/M1076468/eclipse-workspace/CucumberProject/src/test/java/Features/Loginn.feature:96)
+</pre></div></td>
+<td>0</td>
+<td>cucumberOption.TestRunnerTestng@7c83dc97</td></tr>
+<tr>
+<td title='cucumberOption.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: cucumberOption.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Feature", "Optional[ALandingPage]"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate an element using id=content_head
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MT-91110305H&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at PageObjects.Featured.HeadLine(Featured.java:26)
+	at stepDefinations.Feature_Page.text_and_validate(Feature_Page.java:61)
+	at ?.diplay text and Validate1(file:///C:/Users/M1076468/eclipse-workspace/CucumberProject/src/test/java/Features/Loginn.feature:128)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1924411652", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1924411652'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate an element using id=content_head
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MT-91110305H&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at PageObjects.Featured.HeadLine(Featured.java:26)
+	at stepDefinations.Feature_Page.text_and_validate(Feature_Page.java:61)
+	at ?.diplay text and Validate1(file:///C:/Users/M1076468/eclipse-workspace/CucumberProject/src/test/java/Features/Loginn.feature:128)
+</pre></div></td>
+<td>70</td>
+<td>cucumberOption.TestRunnerTestng@7c83dc97</td></tr>
+<tr>
+<td title='cucumberOption.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: cucumberOption.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "CarBooking", "Optional[ALandingPage]"</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a target=&quot;_blank&quot; href=&quot;https://www.savaari.com/mobile-app&quot; rel=&quot;noopener&quot;&gt;...&lt;/a&gt; is not clickable at point (351, 538). Other element would receive the click: &lt;w-div id=&quot;g-xaaxur&quot; class=&quot;g7vvjco g-tng21r g-9p5p73 gr785q2 g-pn77o&quot;&gt;...&lt;/w-div&gt;
+  (Session info: chrome=97.0.4692.71)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MT-91110305H&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\M1076468\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60077}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 209a87cfb9d7c592213ce9e18a70aa29
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at stepDefinations.Car_Booking.click_on_Booking(Car_Booking.java:46)
+	at ?.click on Booking(file:///C:/Users/M1076468/eclipse-workspace/CucumberProject/src/test/java/Features/Loginn.feature:134)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1651795723", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1651795723'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a target=&quot;_blank&quot; href=&quot;https://www.savaari.com/mobile-app&quot; rel=&quot;noopener&quot;&gt;...&lt;/a&gt; is not clickable at point (351, 538). Other element would receive the click: &lt;w-div id=&quot;g-xaaxur&quot; class=&quot;g7vvjco g-tng21r g-9p5p73 gr785q2 g-pn77o&quot;&gt;...&lt;/w-div&gt;
+  (Session info: chrome=97.0.4692.71)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MT-91110305H&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\M1076468\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60077}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 209a87cfb9d7c592213ce9e18a70aa29
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at stepDefinations.Car_Booking.click_on_Booking(Car_Booking.java:46)
+	at ?.click on Booking(file:///C:/Users/M1076468/eclipse-workspace/CucumberProject/src/test/java/Features/Loginn.feature:134)
+</pre></div></td>
+<td>25</td>
+<td>cucumberOption.TestRunnerTestng@7c83dc97</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='cucumberOption.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: cucumberOption.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Sign with Wrong details", "Optional[ALandingPage]"</td>
+<td></td>
+<td>16</td>
+<td>cucumberOption.TestRunnerTestng@7c83dc97</td></tr>
+<tr>
+<td title='cucumberOption.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: cucumberOption.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "OutStation car booking One way TestCase", "Optional[ALandingPage]"</td>
+<td></td>
+<td>24</td>
+<td>cucumberOption.TestRunnerTestng@7c83dc97</td></tr>
+<tr>
+<td title='cucumberOption.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: cucumberOption.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Click on TravelAgent", "Optional[ALandingPage]"</td>
+<td></td>
+<td>10</td>
+<td>cucumberOption.TestRunnerTestng@7c83dc97</td></tr>
+<tr>
+<td title='cucumberOption.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: cucumberOption.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Local Page", "Optional[ALandingPage]"</td>
+<td></td>
+<td>24</td>
+<td>cucumberOption.TestRunnerTestng@7c83dc97</td></tr>
+<tr>
+<td title='cucumberOption.TestRunnerTestng.runScenario()'><b>runScenario</b><br>Test class: cucumberOption.TestRunnerTestng<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Download App", "Optional[ALandingPage]"</td>
+<td></td>
+<td>15</td>
+<td>cucumberOption.TestRunnerTestng@7c83dc97</td></tr>
+</table><p>
+</body>
+</html>

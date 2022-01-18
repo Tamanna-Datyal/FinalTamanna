@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="10" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="Resources.ExtentReporterNG"/>
+    <listener class-name="TestCases.Listners"/>
+  </listeners>
+  <test name="Test1(failed)">
+    <classes>
+      <class name="TestCases.FeaturedHomePage">
+        <methods>
+          <include name="teardown"/>
+          <include name="intialize"/>
+        </methods>
+      </class> <!-- TestCases.FeaturedHomePage -->
+      <class name="TestCases.AboutUsHomePage">
+        <methods>
+          <include name="intialize"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- TestCases.AboutUsHomePage -->
+      <class name="TestCases.SiginHomepage">
+        <methods>
+          <include name="intializeDriver"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- TestCases.SiginHomepage -->
+      <class name="TestCases.DownloadAppHomePage">
+        <methods>
+          <include name="teardown"/>
+          <include name="intialize"/>
+        </methods>
+      </class> <!-- TestCases.DownloadAppHomePage -->
+      <class name="TestCases.Outstation1HomePage">
+        <methods>
+          <include name="teardown"/>
+          <include name="intialize"/>
+        </methods>
+      </class> <!-- TestCases.Outstation1HomePage -->
+      <class name="TestCases.TravelAgentHomePage">
+        <methods>
+          <include name="teardown"/>
+          <include name="intialize"/>
+        </methods>
+      </class> <!-- TestCases.TravelAgentHomePage -->
+      <class name="TestCases.CarRentalHomePage">
+        <methods>
+          <include name="teardown"/>
+          <include name="intialize"/>
+        </methods>
+      </class> <!-- TestCases.CarRentalHomePage -->
+      <class name="TestCases.AirportTabHomePage">
+        <methods>
+          <include name="teardown"/>
+          <include name="intialize"/>
+        </methods>
+      </class> <!-- TestCases.AirportTabHomePage -->
+      <class name="TestCases.CabBookingHomePage">
+        <methods>
+          <include name="MainHomePage"/>
+          <include name="teardown"/>
+          <include name="intialize"/>
+        </methods>
+      </class> <!-- TestCases.CabBookingHomePage -->
+      <class name="TestCases.LocalTabHomePage">
+        <methods>
+          <include name="intialize"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- TestCases.LocalTabHomePage -->
+      <class name="TestCases.OutStationHomePage">
+        <methods>
+          <include name="intialize"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- TestCases.OutStationHomePage -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test name="Test6(failed)">
+    <classes>
+      <class name="TestCases.FeaturedHomePage">
+        <methods>
+          <include name="teardown"/>
+          <include name="intialize"/>
+        </methods>
+      </class> <!-- TestCases.FeaturedHomePage -->
+      <class name="TestCases.AboutUsHomePage">
+        <methods>
+          <include name="intialize"/>
+          <include name="teardown"/>
+          <include name="MainHomePage"/>
+        </methods>
+      </class> <!-- TestCases.AboutUsHomePage -->
+      <class name="TestCases.SiginHomepage">
+        <methods>
+          <include name="intializeDriver"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- TestCases.SiginHomepage -->
+      <class name="TestCases.DownloadAppHomePage">
+        <methods>
+          <include name="teardown"/>
+          <include name="intialize"/>
+        </methods>
+      </class> <!-- TestCases.DownloadAppHomePage -->
+      <class name="TestCases.Outstation1HomePage">
+        <methods>
+          <include name="teardown"/>
+          <include name="intialize"/>
+        </methods>
+      </class> <!-- TestCases.Outstation1HomePage -->
+      <class name="TestCases.TravelAgentHomePage">
+        <methods>
+          <include name="teardown"/>
+          <include name="intialize"/>
+        </methods>
+      </class> <!-- TestCases.TravelAgentHomePage -->
+      <class name="TestCases.CarRentalHomePage">
+        <methods>
+          <include name="teardown"/>
+          <include name="intialize"/>
+        </methods>
+      </class> <!-- TestCases.CarRentalHomePage -->
+      <class name="TestCases.AirportTabHomePage">
+        <methods>
+          <include name="teardown"/>
+          <include name="intialize"/>
+        </methods>
+      </class> <!-- TestCases.AirportTabHomePage -->
+      <class name="TestCases.CabBookingHomePage">
+        <methods>
+          <include name="teardown"/>
+          <include name="intialize"/>
+        </methods>
+      </class> <!-- TestCases.CabBookingHomePage -->
+      <class name="TestCases.LocalTabHomePage">
+        <methods>
+          <include name="intialize"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- TestCases.LocalTabHomePage -->
+      <class name="TestCases.OutStationHomePage">
+        <methods>
+          <include name="intialize"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- TestCases.OutStationHomePage -->
+    </classes>
+  </test> <!-- Test6(failed) -->
+  <test name="Test9(failed)">
+    <classes>
+      <class name="TestCases.FeaturedHomePage">
+        <methods>
+          <include name="teardown"/>
+          <include name="intialize"/>
+        </methods>
+      </class> <!-- TestCases.FeaturedHomePage -->
+      <class name="TestCases.AboutUsHomePage">
+        <methods>
+          <include name="intialize"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- TestCases.AboutUsHomePage -->
+      <class name="TestCases.SiginHomepage">
+        <methods>
+          <include name="intializeDriver"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- TestCases.SiginHomepage -->
+      <class name="TestCases.DownloadAppHomePage">
+        <methods>
+          <include name="teardown"/>
+          <include name="intialize"/>
+        </methods>
+      </class> <!-- TestCases.DownloadAppHomePage -->
+      <class name="TestCases.Outstation1HomePage">
+        <methods>
+          <include name="teardown"/>
+          <include name="intialize"/>
+        </methods>
+      </class> <!-- TestCases.Outstation1HomePage -->
+      <class name="TestCases.CarRentalHomePage">
+        <methods>
+          <include name="teardown"/>
+          <include name="NavigationPage"/>
+          <include name="intialize"/>
+        </methods>
+      </class> <!-- TestCases.CarRentalHomePage -->
+      <class name="TestCases.TravelAgentHomePage">
+        <methods>
+          <include name="teardown"/>
+          <include name="intialize"/>
+        </methods>
+      </class> <!-- TestCases.TravelAgentHomePage -->
+      <class name="TestCases.AirportTabHomePage">
+        <methods>
+          <include name="teardown"/>
+          <include name="intialize"/>
+        </methods>
+      </class> <!-- TestCases.AirportTabHomePage -->
+      <class name="TestCases.CabBookingHomePage">
+        <methods>
+          <include name="teardown"/>
+          <include name="intialize"/>
+        </methods>
+      </class> <!-- TestCases.CabBookingHomePage -->
+      <class name="TestCases.LocalTabHomePage">
+        <methods>
+          <include name="intialize"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- TestCases.LocalTabHomePage -->
+      <class name="TestCases.OutStationHomePage">
+        <methods>
+          <include name="intialize"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- TestCases.OutStationHomePage -->
+    </classes>
+  </test> <!-- Test9(failed) -->
+</suite> <!-- Failed suite [Suite] -->
